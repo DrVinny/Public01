@@ -23,8 +23,13 @@ $uninstApps =
 "Microsoft.MicrosoftOfficeHub_8wekyb3d8bbwe",
 "Microsoft.549981C3F5F10_8wekyb3d8bbwe",
 "Microsoft.WindowsAlarms_8wekyb3d8bbwe",
-"Microsoft.YourPhone_8wekyb3d8bbwe"
-
+"Microsoft.YourPhone_8wekyb3d8bbwe",
+"Microsoft.GamingApp_8wekyb3d8bbwe",
+"Microsoft.MicrosoftSudoku_8wekyb3d8bbwe",
+"Microsoft.OneConnect_8wekyb3d8bbwe",
+"Microsoft.Studios.Wordament_8wekyb3d8bbwe",
+"Microsoft.Xbox.TCUI_8wekyb3d8bbwe",
+"Microsoft.Getstarted_8wekyb3d8bbwe",
 
 
 $uninstApps | ForEach-Object {winget uninstall -e --id $_}
