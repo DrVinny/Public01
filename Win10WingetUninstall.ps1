@@ -30,6 +30,7 @@ $uninstApps =
 "Microsoft.Studios.Wordament_8wekyb3d8bbwe",
 "Microsoft.Xbox.TCUI_8wekyb3d8bbwe",
 "Microsoft.Getstarted_8wekyb3d8bbwe",
+"Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe",
+"Microsoft.EdgeWebView2Runtime"
 
-
-$uninstApps | ForEach-Object {winget uninstall -e --id $_}
+$uninstApps | ForEach-Object {winget uninstall --accept-source-agreements -h -e --id $_}
