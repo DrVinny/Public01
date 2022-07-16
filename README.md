@@ -13,4 +13,3 @@
 * Update some MSEdge Settings
 * Remove wallpaper (if any), and set background to black
 * Set taskbar buttons to align to the Left in windows 11
-* 
