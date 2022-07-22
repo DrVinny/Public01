@@ -7,6 +7,7 @@ $instApps =
 # 'Microsoft.VisualStudioCode',
 # 'Logitech.GHUB',
 # 'Adobe.Acrobat.Reader.64-bit',
-# 'BlenderFoundation.Blender'
+# 'BlenderFoundation.Blender',
+# 'Microsoft.WindowsAdminCenter'
 
 $instApps | ForEach-Object {winget install -e --id $_}
