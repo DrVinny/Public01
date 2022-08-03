@@ -32,5 +32,6 @@ $uninstApps =
 "Microsoft.Getstarted_8wekyb3d8bbwe",
 "Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe",
 "Microsoft.EdgeWebView2Runtime"
+"MicrosoftWindows.Client.WebExperience_cw5n1h2txyewy"
 
 $uninstApps | ForEach-Object {winget uninstall --accept-source-agreements -h -e --id $_}
