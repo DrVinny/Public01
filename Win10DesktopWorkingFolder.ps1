@@ -6,6 +6,6 @@ $topFolder = "w"
 # mkdir $DesktopPath\Working
 
 #New Way
-New-Item -Path $DesktopPath -Name "$topFolder\dl" -ItemType "Directory"
-New-Item -Path $DesktopPath -Name "$topFolder\test" -ItemType "Directory"
-New-Item -Path $DesktopPath -Name "$topFolder\xfer" -ItemType "Directory"
+New-Item -Path $DesktopPath -ItemType "Directory" -Name "$topFolder\dl"
+New-Item -Path $DesktopPath -ItemType "Directory" -Name "$topFolder\test"
+New-Item -Path $DesktopPath -ItemType "Directory" -Name "$topFolder\xfer"
