@@ -34,6 +34,6 @@ $uninstApps =
 "Microsoft.EdgeWebView2Runtime"
 
 # This will uninstall windows 11 widgets, among other things
-"MicrosoftWindows.Client.WebExperience_cw5n1h2txyewy"
+# "MicrosoftWindows.Client.WebExperience_cw5n1h2txyewy"
 
-$uninstApps | ForEach-Object {winget uninstall --accept-source-agreements -h -e --id $_}
+$uninstApps | ForEach-Object {winget uninstall --accept-source-agreements -h -e --id $_} -ErrorAction Silently
