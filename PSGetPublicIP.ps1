@@ -3,4 +3,3 @@
 $myPubIP = (Invoke-WebRequest ifconfig.me/ip).Content.Trim()
 $myPubIP | set-clipboard
 $myPubIP
-
