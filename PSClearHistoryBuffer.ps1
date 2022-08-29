@@ -1,0 +1,1 @@
+([Microsoft.PowerShell.PSConsoleReadLine]::ClearHistory())
