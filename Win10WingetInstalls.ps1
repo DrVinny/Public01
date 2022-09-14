@@ -9,5 +9,6 @@ $instApps =
 # 'Adobe.Acrobat.Reader.64-bit',
 # 'BlenderFoundation.Blender',
 # 'Microsoft.WindowsAdminCenter'
+# 'Google.Chrome'
 
 $instApps | ForEach-Object {winget install -e --id $_}
