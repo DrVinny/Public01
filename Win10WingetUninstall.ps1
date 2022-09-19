@@ -32,6 +32,7 @@ $uninstApps =
 "Microsoft.Getstarted_8wekyb3d8bbwe",
 "Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe",
 "Microsoft.EdgeWebView2Runtime"
+"9WZDNCRFJ3Q2" # MSN Weather, but it doesn't work
 
 # This will uninstall windows 11 widgets, among other things
 # "MicrosoftWindows.Client.WebExperience_cw5n1h2txyewy"
