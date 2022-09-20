@@ -8,7 +8,7 @@ $checkResult = (gp $keyVar).$nameVar
 
 if ($checkResult -eq $null){
     
-    New-Item -Path $keyVar -Force | Out-Null
+#     New-Item -Path $keyVar -Force | Out-Null
 
     New-ItemProperty -Path $keyVar -Name $nameVar -Value $valueVar -PropertyType DWORD -Force | Out-Null
 
