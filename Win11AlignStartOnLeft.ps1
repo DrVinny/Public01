@@ -20,3 +20,4 @@ elseif ($checkResult -eq 1) {
 else {
     Write-Output "Registry entry already exists, and is already set to the correct value (0)."
 }
+Stop-Process -Name explorer
