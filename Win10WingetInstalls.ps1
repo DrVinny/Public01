@@ -4,7 +4,6 @@ $instApps =
 
 'Microsoft.PowerShell',
 'Microsoft.WindowsTerminal',
-# 'Microsoft.VisualStudioCode',
 # 'Logitech.GHUB',
 # 'Adobe.Acrobat.Reader.64-bit',
 # 'BlenderFoundation.Blender',
