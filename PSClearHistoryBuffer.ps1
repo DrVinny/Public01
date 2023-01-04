@@ -13,3 +13,11 @@ Remove-Item (Get-PSReadlineOption).HistorySavePath
 # PS C:\> Set-PSReadlineOption -HistorySaveStyle SaveIncrementally # default
 # PS C:\> Set-PSReadlineOption -HistorySaveStyle SaveAtExit
 # PS C:\> Set-PSReadlineOption -HistorySaveStyle SaveNothing
+
+
+<# Copy Block Below
+
+([Microsoft.PowerShell.PSConsoleReadLine]::ClearHistory())
+Remove-Item (Get-PSReadlineOption).HistorySavePath
+
+#>
