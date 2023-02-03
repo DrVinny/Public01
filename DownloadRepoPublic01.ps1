@@ -1,4 +1,5 @@
 # This script uses powershell to download the Publc01 Repo
+# Run in terminal, make sure to cd to the dir where you want it downloaded
 
 $repoOwn = 'DrVinny'
 $repoName = 'Public01'
