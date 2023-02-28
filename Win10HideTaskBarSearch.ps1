@@ -5,7 +5,7 @@ $tbsName = "SearchBoxTaskbarMode"
 $tbsValue = "0"
 
 # Test if value exists
-$tbsTest = gpv -Path $tbsPath -Name $tbsName
+$tbsTest = Get-ItemPropertyValue -Path $tbsPath -Name $tbsName
 
 if ($tbsTest -ne 0) {
     sp -Path $tbsPath -Name $tbsName -Value $tbsValue -Type "DWord" -Force
