@@ -4,11 +4,12 @@ $instApps =
 
 'Microsoft.PowerShell',
 'Microsoft.WindowsTerminal',
-# 'Logitech.GHUB',
+'Logitech.GHUB',
 # 'Adobe.Acrobat.Reader.64-bit',
 # 'BlenderFoundation.Blender',
-# 'Microsoft.WindowsAdminCenter'
-# 'Microsoft.VisualStudioCode'
-# 'Google.Chrome'
+# 'Microsoft.WindowsAdminCenter',
+'Microsoft.VisualStudioCode',
+# 'Google.Chrome',
+# 'Mozilla.Firefox',
 
 $instApps | ForEach-Object {winget install -e --id $_}
