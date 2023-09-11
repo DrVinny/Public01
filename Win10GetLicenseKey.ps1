@@ -10,3 +10,4 @@ $licVal = "BackupProductKeyDefault"
 
 $licCheck = (Get-ItemProperty $licKey).$licVal
 $licCheck
+$licCheck | clip
