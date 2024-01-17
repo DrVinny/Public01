@@ -19,10 +19,10 @@ $checkResult = (gp $adobeLicKey).$adobePropName
 if ($checkResult -eq $null){    
     # Inculuding the one line immediately below will reset the entire $adobeLicKey key
     # New-Item -Path $adobeLicKey -Force | Out-Null
-    New-ItemProperty -Path $adobeLicKey -Name $nameAl -Value $adobePropName -PropertyType DWORD -Force | Out-Null
+    New-ItemProperty -Path $adobeLicKey -Name $adobePropName -Value $adobePropName -PropertyType DWORD -Force | Out-Null
 }
 elseif ($checkResult -eq 1) {
-    Set-ItemProperty -Path $adobeLicKey -Name $nameAl -Value "0"
+    Set-ItemProperty -Path $adobeLicKey -Name $adobePropName -Value "0"
 }
 else {
     Write-Output "Registry entry already exists, and is already set to the correct value (0)."
