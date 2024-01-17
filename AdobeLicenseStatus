@@ -1,0 +1,30 @@
+# Adobe Licensing Status
+# This script checks the adobe licensing status (it should be set to 0 or 2), and changes it to 0 if it's not already
+$adobeLicKey = 'HKLM:\SOFTWARE\Policies\Adobe\Adobe Acrobat\DC\FeatureLockDown'
+$adobePropName = "bIsSCReducedModeEnforced"
+
+# 0 = Allows all license functions (prefered)
+$adobeLicVal = "0"
+
+# 1 = Blocks all licensed functions (it should never be this one)
+# $adobeLicVal = "1"
+
+# 2 = Should allow everything, but sometimes doesn't. This also suppresses the expiration notification.
+# $adobeLicVal = "2"
+
+
+# Run a check to see if the value exists and save to $checkResult
+$checkResult = (gp $adobeLicKey).$adobePropName
+
+if ($checkResult -eq $null){    
+    # Inculuding the one line immediately below will reset the entire $adobeLicKey key
+    # New-Item -Path $adobeLicKey -Force | Out-Null
+    New-ItemProperty -Path $adobeLicKey -Name $nameAl -Value $adobePropName -PropertyType DWORD -Force | Out-Null
+}
+elseif ($checkResult -eq 1) {
+    Set-ItemProperty -Path $adobeLicKey -Name $nameAl -Value "0"
+}
+else {
+    Write-Output "Registry entry already exists, and is already set to the correct value (0)."
+}
+Stop-Process -Name explorer
